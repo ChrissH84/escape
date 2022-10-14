@@ -12,7 +12,7 @@ menuBtn.addEventListener('click', function () {
 /* Hero Section, Moving Background */ 
 let sun = document.getElementById('sun');
 let mountainsBack = document.getElementById('mountains-back');
-let text = document.getElementById('text');
+let heroTitle = document.getElementById('hero-title');
 let btn = document.getElementById('btn');
 let mountainsFront = document.getElementById('mountains-front');
 
@@ -21,15 +21,15 @@ window.addEventListener('scroll', function(){
     sun.style.top = value * 1 + 'px';
     mountainsBack.style.top = value * 0.50 + 'px';
     mountainsFront.style.top = value * 0.25 + 'px';
-    text.style.marginTop = value * 3.5 + 'px';
+    heroTitle.style.marginTop = value * 3.5 + 'px';
     btn.style.marginTop = value * 3.5 + 'px';
 })
 
-/* Abaut Section */
+/* About Section */
 window.addEventListener('scroll', reveal);
 
 function reveal(){ 
-    var reveals = document.querySelectorAll('.revealOne');
+    var reveals = document.querySelectorAll('.reveal-one');
     
     for(var i = 0; i < reveals.length; i++){
         
@@ -45,9 +45,3 @@ function reveal(){
         }
     }
 }
-/* Explore Section */
-
-
-
-
-

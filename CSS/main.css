@@ -21,6 +21,8 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 10000;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .logo {
@@ -138,7 +140,7 @@ header ul li a:hover {
   background-color: rgb(85, 63, 112);
 }
 
-.myDIV {
+.menu-item {
   text-decoration: none;
   color: #fff;
   font-size: 1.2rem;
@@ -148,7 +150,6 @@ header ul li a:hover {
   .mobile-nav {
     display: none;
   }
-
   .hamburger {
     display: none;
   }
@@ -191,14 +192,14 @@ header ul li a:hover {
   mix-blend-mode: screen;
 }
 
-.hero-section #text {
+.hero-section #hero-title {
   position: absolute;
   color: #fff;
   font-size: 5rem;
   font-weight: 500;
   text-align: center;
   z-index: 9;
-  margin-bottom: 400px;
+  margin-bottom: 250px;
   -webkit-animation: 3s ease-out 0s 1 slideInFromBottomText;
           animation: 3s ease-out 0s 1 slideInFromBottomText;
 }
@@ -229,8 +230,8 @@ header ul li a:hover {
   scale: 1.1;
 }
 
-/* Abaut Section */
-.abaut-section {
+/* About Section */
+.about-section {
   position: relative;
   padding: 100px;
   background: linear-gradient(0deg, rgb(23, 30, 57) 0%, rgb(5, 9, 17) 100%);
@@ -245,14 +246,14 @@ header ul li a:hover {
   justify-content: center;
 }
 
-.revealOne {
+.reveal-one {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: all 2s ease;
 }
 
-.revealOne.active {
+.reveal-one.active {
   transform: translateY(0px);
   opacity: 1;
 }
@@ -261,9 +262,9 @@ header ul li a:hover {
   width: 50%;
   height: 600px;
   background: url(../assets/Overlapping-Background.jpg) center/cover;
-  border: 1px solid rgba(73, 56, 91, 0.705);
+  border: 1px solid rgba(105, 80, 130, 0.631372549);
   border-radius: 8px;
-  box-shadow: 0 1px 1px rgba(68, 53, 88, 0.677), 0 1px 2px rgba(68, 53, 88, 0.677), 0 2px 4px rgba(68, 53, 88, 0.677), 0 4px 8px rgba(68, 53, 88, 0.677), 0 8px 16px rgba(68, 53, 88, 0.677), 0 16px 32px rgba(68, 53, 88, 0.677);
+  box-shadow: 0px 4px 54px -15px rgba(105, 80, 130, 0.631372549);
 }
 
 .right {
@@ -275,11 +276,11 @@ header ul li a:hover {
   align-items: center;
   justify-content: center;
   padding: 30px;
-  border: 1px solid rgba(73, 56, 91, 0.705);
+  border: 1px solid rgba(105, 80, 130, 0.631372549);
   border-radius: 8px;
   color: white;
   margin-left: -150px;
-  box-shadow: 0 1px 1px rgba(68, 53, 88, 0.677), 0 1px 2px rgba(68, 53, 88, 0.677), 0 2px 4px rgba(68, 53, 88, 0.677), 0 4px 8px rgba(68, 53, 88, 0.677), 0 8px 16px rgba(68, 53, 88, 0.677), 0 16px 32px rgba(68, 53, 88, 0.677);
+  box-shadow: 0px 4px 54px -15px rgba(105, 80, 130, 0.631372549);
 }
 
 .right h1 {
@@ -334,10 +335,10 @@ header ul li a:hover {
 
 .box {
   width: 340px;
-  margin: 20px;
+  margin: 30px;
   border-radius: 8px;
-  border: 1px solid rgba(73, 56, 91, 0.705);
-  box-shadow: 0 1px 1px rgba(68, 53, 88, 0.677), 0 1px 2px rgba(68, 53, 88, 0.677), 0 2px 4px rgba(68, 53, 88, 0.677), 0 4px 8px rgba(68, 53, 88, 0.677), 0 8px 16px rgba(68, 53, 88, 0.677), 0 16px 32px rgba(68, 53, 88, 0.677);
+  border: 0px solid rgba(105, 80, 130, 0.631372549);
+  box-shadow: 0px 4px 54px -15px rgba(105, 80, 130, 0.631372549);
   overflow: hidden;
   transition: 2s;
 }
@@ -469,14 +470,15 @@ header ul li a:hover {
   font-size: 18px;
   line-height: 22px;
   border-radius: 8px;
-  border: 1px solid rgba(73, 56, 91, 0.705);
+  border: 1px solid rgba(105, 80, 130, 0.631372549);
   padding: 13px;
   margin-bottom: 15px;
   width: 100%;
   box-sizing: border-box;
   outline: 0;
   background: rgb(23, 30, 57);
-  box-shadow: 0 1px 1px rgba(68, 53, 88, 0.677), 0 1px 2px rgba(68, 53, 88, 0.677), 0 2px 4px rgba(68, 53, 88, 0.677), 0 4px 8px rgba(68, 53, 88, 0.677), 0 8px 16px rgba(68, 53, 88, 0.677), 0 16px 32px rgba(68, 53, 88, 0.677);
+  box-shadow: 0px 4px 54px -15px rgba(105, 80, 130, 0.631372549);
+  color: #fff;
 }
 
 textarea {
@@ -490,7 +492,7 @@ textarea {
   font-size: 1rem;
   color: #fff;
   background: rgb(23, 30, 57);
-  border: 1px solid rgba(73, 56, 91, 0.705);
+  border: 1px solid rgba(105, 80, 130, 0.631372549);
   border-radius: 30px;
   display: inline-block;
   padding: 10px 30px;
@@ -501,7 +503,7 @@ textarea {
   transition: 0.5s;
   cursor: pointer;
   margin-left: 150px;
-  box-shadow: 0 1px 1px rgba(68, 53, 88, 0.677), 0 1px 2px rgba(68, 53, 88, 0.677), 0 2px 4px rgba(68, 53, 88, 0.677), 0 4px 8px rgba(68, 53, 88, 0.677), 0 8px 16px rgba(68, 53, 88, 0.677), 0 16px 32px rgba(68, 53, 88, 0.677);
+  box-shadow: 0px 4px 54px -15px rgba(105, 80, 130, 0.631372549);
 }
 
 [type=submit]:hover {
@@ -557,7 +559,7 @@ textarea {
 .copyright-text {
   padding: 8px 40px;
   background: rgb(23, 30, 57);
-  border-top: 1px solid rgba(73, 56, 91, 0.705);
+  border-top: 1px solid rgba(38, 15, 62, 0.705);
   text-align: center;
   padding: 20px;
   font-weight: 200;
@@ -640,5 +642,85 @@ textarea {
   }
   100% {
     transform: translateY(0);
+  }
+}
+@media (max-width: 991px) {
+  .hero-section #hero-title {
+    font-size: 3.5rem;
+  }
+  .hero-section #btn {
+    padding: 6px 20px;
+    font-size: 1.2rem;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  .right h1 {
+    font-size: 2rem;
+  }
+  .right p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .right {
+    margin-left: 0;
+    margin-top: -80px;
+    width: 80%;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-section {
+    padding: 50px;
+  }
+  .info-content {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    padding: 15px 30px;
+  }
+  header .logo {
+    font-size: 1.5rem;
+  }
+  .hero-section #hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 300px;
+  }
+  .hero-section #btn {
+    padding: 6px 20px;
+    font-size: 1rem;
+  }
+  .about-section {
+    padding: 15px;
+  }
+  .right {
+    width: 90%;
+  }
+  .title-text {
+    font-size: 2rem;
+  }
+  .explore-title p {
+    font-size: 0.9rem;
+  }
+  .contact-title p {
+    font-size: 0.9rem;
+  }
+  .form {
+    max-width: 320px;
+  }
+  [type=submit] {
+    font-size: 0.9rem;
+    margin-left: 100px;
+  }
+  .info-content {
+    padding: 0 10px;
   }
 }/*# sourceMappingURL=main.css.map */
